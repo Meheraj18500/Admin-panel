@@ -1,0 +1,470 @@
+/* Googl Font */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+/* --------- Basic Setup -------- */
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    overflow-x: hidden;
+    font-family: 'Roboto', sans-serif;
+}
+a,
+a:hover{
+    text-decoration: none;
+}
+h1, h2, h3, h4, h5, h6{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+:focus{
+    outline: none;
+}
+.container{
+    max-width: 1300px !important;
+}
+
+.col-lg-2, .col-md-4, .col-12{
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+/* -------------------- Navbar ---------------------- */
+nav{
+    background-color: #1B1464;
+}
+
+nav a,
+nav a:hover{
+    font-size: 18px;
+    color: #ffffff;
+    font-weight: 400;
+}
+nav button{
+    background: transparent;
+    border: none;
+    color: #ffffff !important;
+    font-size: 18px;
+}
+nav .menu button i{
+    font-size: 14px;
+}
+
+/* ------------ Body Layout Setup ------------- */
+main{
+    display: flex;
+    position: relative;
+}
+.left-area{
+    width: calc(100% - 260px);
+}
+.right-area{
+    width: 260px;
+    background-color: #ffffff;
+    transition: all .5s ease-in-out;
+    position: relative;
+    z-index: 5;
+}
+.right-area.click{
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: #fff;
+    display: block;
+    animation: show .5s ease-in-out;
+    z-index: 9999;
+}
+@keyframes show {
+    0%{
+       transform: translateX(265px);
+       opacity: 0.5;
+    }
+    100%{
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+/* ============================ Left area Start ============================ */
+/* ------------ Left area card item ------------- */
+.card-items{
+    margin: 20px 0 20px 0;
+}
+.card-items .item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card-items .card{
+    width: 175px;
+    height: 72px;
+    box-shadow: 3px 3px 5px #B5B5B585;
+    border-radius: 11px;
+    display: flex;
+    flex-direction: row;
+    color: #ffffff;
+    overflow: hidden;
+}
+
+.card-items .card .icon i{
+    font-size: 32px;
+    display: inline-block;
+    margin: 16px 0px 0px 10px;
+}
+.card-items .card .content{
+    text-align: center;
+    width: 100%;
+}
+.card-items .card .content h3{
+    font-size: 40px;
+    font-weight: 700;
+}
+.card-items .card .content p{
+    margin-top: -10px;
+    font-size: 14px;
+}
+.card-items .item:nth-child(1) .card{
+    background: transparent linear-gradient(90deg, #7C5CF5 0%, #9B8BF7 100%);
+}
+.card-items .item:nth-child(2) .card{
+    background: transparent linear-gradient(90deg, #6AD4D4 0%, #1AC2CC 100%);
+}
+.card-items .item:nth-child(3) .card{
+    background: transparent linear-gradient(90deg, #5672DD 0%, #428DE0 100%);
+}
+.card-items .item:nth-child(4) .card{
+    background: transparent linear-gradient(90deg, #7C5CF5 0%, #9B8BF7 100%);
+}
+.card-items .item:nth-child(5) .card{
+    background: transparent linear-gradient(90deg, #6AD4D4 0%, #1AC2CC 100%);
+}
+.card-items .item:nth-child(6) .card{
+    background: transparent linear-gradient(90deg, #5672DD 0%, #428DE0 100%);
+}
+
+/* ------------ Left area Options ------------- */
+.options{
+    margin-top: 30px;
+}
+.options .option{
+    display: inline-block;
+    margin: 0 8px;
+}
+.options .option:first-child{
+    margin-left: 0;
+}
+.options select{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    width: 177px;
+    height: 42px;
+    border: none;
+    border-radius: 0;
+    background-color: #D8D8D8;
+    text-align: center;
+    background-image: url("data:image/svg+xml;utf8,<svg fill='black' height='32' viewBox='0 0 24 24' width='32' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/><path d='M0 0h24v24H0z' fill='none'/></svg>");
+    background-repeat: no-repeat;
+    background-position-x: right;
+    background-position-y: center;
+    color: #201F1F;
+}
+
+/* ====================== Data table area ======================== */
+.data-table-area .query-data{
+    margin: 20px 0 40px 0;
+    display: flex;
+}
+.data-table-area .date{
+    display: flex;
+}
+.data-table-area .search{
+    display: flex;
+    float: right;
+}
+.date .input-area,
+.search .search-box{
+    width: 155px;
+    height: 33px;
+    display: flex;
+    background-color: #D8D8D8;
+    margin-right: 10px;
+    overflow: hidden;
+    justify-content: space-between;
+}
+.search .search-box{
+    border-radius: 20px;
+    height: 38px;
+    width: 180px;
+    margin: -3px 0 0 8px;
+    display: flex;
+}
+.date span,
+.search span{
+    font-size: 15px;
+    margin: 5px 5px 0 0;
+    display: inline-block;
+}
+.date .input-area input,
+.search .search-box input{
+    background-color: #D8D8D8;
+    border: none;
+    width: 80%;
+    height: 33px;
+    padding:0 5px 0 8px;
+    text-align: center;
+}
+.search .search-box input{
+    width: 150px;
+    padding:0 15px;
+    margin-top: 3px;
+    text-align: left;
+}
+.date input[type="submit"],
+.date .row-count input{
+    background-color: #D8D8D8;
+    border: none;
+    width: 50px;
+    height: 33px;
+    padding:0 5px 0 8px;
+    text-align: center;
+}
+.date .row-count{
+    margin-left: 70px;
+    display: flex;
+}
+.date .input-area i{
+    margin-top: 6px;
+    text-align: center;
+    display: inline-block;
+    color: #A4A3A3;
+    padding-right: 6px;
+}
+.search .search-box i{
+    display: inline-block;
+    margin-top: 8px;
+    font-size: 18px;
+    width: 20px;
+    padding-right: 20px;
+}
+
+/* -------------------- Table Field ------------------- */
+.data-table-area .content_table{
+    width: 100%;
+    text-align: center;
+    margin: 0 15px;
+}
+.content_table thead tr{
+    background-color: #ABC9FF;
+    height: 43px;
+   
+}
+.content_table thead th{
+    font-weight: 500;
+    font-size: 18px;
+    color: #000;
+    border-bottom: 4px solid #ffffff;
+}
+.content_table tbody tr{
+    background-color: #EFF3F6;
+    height: 30px;
+    border-top: 3px solid #ffffff;
+}
+
+/* --------------- Pagination ------------- */
+.pagination-box {
+    margin: 30px 0;
+    display: flex;
+    justify-content: center;
+}
+.pagination-box nav{
+    background: transparent;
+}
+.pagination-box .pagination li:last-child a{
+    color: #3c3f42;
+}
+.pagination-box .pagination li.active a{
+    background: #2BC877;
+    border-color: #2BC877;
+}
+
+/* ============================ Right area Start ============================ */
+.right-area{
+    text-align: center;
+    margin-top: 20px;
+}
+.right-area .create-btn button{
+    width: 200px;
+    height: 40px;
+    text-align: center;
+    font-size: 14px;
+    color: #fff;
+    background-color: #39B54A;
+    margin: 0 auto;
+    border: none;
+}
+.donut-chart,
+.column-chart,
+.line-chart{
+    background-color: #ffffff;
+    box-shadow: 0px 5px 10px #00000029;
+    padding-top: 6px;
+    overflow: hidden;
+    width: 200px;
+    height: 200px;
+    text-align: center;
+    margin: 20px auto;
+    position: relative;
+}
+.donut-chart p,
+.column-chart p,
+.line-chart p{
+    font-size: 16px;
+    color: #6D6E71;
+    border-bottom: 1px solid #D1D3D4;
+    text-align: center;
+    display: inline-block;
+    margin-bottom: 0;
+}
+
+.donut-chart a,
+.column-chart a,
+.line-chart a{
+    padding: 3px;
+    width: 120px;
+    background-color: #39B54A;
+    display: inline-block;
+    color: #ffffff;
+    font-size: 12px;
+}
+
+.line-chart a,
+.donut-chart a,
+.column-chart a{
+    position: absolute;
+    top: 85%;
+    left: 21%;
+}
+
+.donut-chart .new-div{
+    height: 150px !important; 
+    width: 150px; 
+    margin: 0 auto;
+}
+
+.donut-chart svg{
+    top: -102px !important;
+}
+.donut-chart svg text:last-child{
+    display: none;
+}
+.donut-chart svg text:first-child{
+    margin-top: 10px;
+    text-align: center;
+}
+/* ------------ common bar ------------ */
+
+.column-chart .bar-box{
+    height: 120px !important; 
+    width: 190px; 
+    margin: 10px auto;
+    overflow: hidden;
+}
+.column-chart svg{
+    top: -190px !important;
+}
+
+.line-chart .line-box{
+    height: 120px !important; 
+    width: 190px; 
+    margin: 10px auto;
+    overflow: hidden;
+}
+.line-chart svg{
+    top: -205px !important;
+}
+
+/* ============================ Main Style End ============================ */
+
+/* 
+        1: Page Two style,
+        2: page Three Style &
+        3: page Four Style are given below.
+ */
+/* (1) ============================ Admin2 Page ============================ */
+
+.admin2.data-table-area .content_table{
+    width: 100%;
+    text-align: left;
+    margin: 0 15px;
+}
+.admin2.data-table-area .content_table thead th,
+.admin2.data-table-area .content_table tbody td{
+    padding-left: 30px;
+}
+.admin2.data-table-area h5{
+    font-size: 17px;
+    color: #0D0D0D;
+    margin-bottom: 5px;
+    font-weight: 400;
+}
+
+/* (2) ============================ Charts Page ============================ */
+.linechart.data-table-area{
+    margin-top: 100px;
+}
+.query-data .chart-btn{
+    margin-left: 80px;
+}
+.query-data .chart-btn button{
+    border: none;
+    padding: 5px 30px;
+    color: #ffffff;
+    font-size: 20px;
+    margin: 0 8px;
+}
+.query-data .chart-btn button:first-child{
+    background: #39B54A;
+}
+.query-data .chart-btn button:last-child{
+    background: #FCAB10;
+}
+
+
+/* (3) ============================ Charts2 Page ============================ */
+.area-chart.data-table-area{
+    margin-top: 100px;
+}
+
+/* .area-chart .query-data{
+    display: grid;
+    place-items: center;
+} */
+.area-chart .query-data .series-item{
+    width: 100%;
+    text-align: center;
+}
+.area-chart .query-data .series-item .series1,
+.area-chart .query-data .series-item .series2{
+    display:inline;
+}
+.area-chart .query-data .series-item .color{
+    width: 75px;
+    height: 25px;
+    display: inline-block;
+}
+.area-chart .query-data .series-item .text{
+    font-size: 16px;
+    font-weight: 500;
+    display: inline-block;
+    margin-left: 8px;
+}
+.area-chart .query-data .series1{
+    margin-right: 20px;
+}
+.area-chart .query-data .series1 .color{
+    background-color: #F8333C;
+}
+.area-chart .query-data .series2 .color{
+    background-color: #39B54A;
+}

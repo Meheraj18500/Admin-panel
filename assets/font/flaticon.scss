@@ -1,0 +1,61 @@
+$flaticon-font: "flaticon";
+
+@font-face {
+    font-family: $flaticon-font;
+    src: url("./flaticon.ttf?971bc0739a8fc716e412f0c6fc9335db") format("truetype"),
+url("./flaticon.woff?971bc0739a8fc716e412f0c6fc9335db") format("woff"),
+url("./flaticon.woff2?971bc0739a8fc716e412f0c6fc9335db") format("woff2"),
+url("./flaticon.eot?971bc0739a8fc716e412f0c6fc9335db#iefix") format("embedded-opentype"),
+url("./flaticon.svg?971bc0739a8fc716e412f0c6fc9335db#flaticon") format("svg");
+}
+
+i[class^="flaticon-"]:before, i[class*=" flaticon-"]:before {
+    font-family: flaticon !important;
+    font-style: normal;
+    font-weight: normal !important;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+$flaticon-map: (
+    "facebook": "\f101",
+    "calendar": "\f102",
+    "ticket": "\f103",
+    "pending": "\f104",
+    "email": "\f105",
+    "visibility": "\f106",
+    "support": "\f107",
+    "search": "\f108",
+    "menu": "\f109",
+);
+
+.flaticon-facebook:before {
+    content: map-get($flaticon-map, "facebook");
+}
+.flaticon-calendar:before {
+    content: map-get($flaticon-map, "calendar");
+}
+.flaticon-ticket:before {
+    content: map-get($flaticon-map, "ticket");
+}
+.flaticon-pending:before {
+    content: map-get($flaticon-map, "pending");
+}
+.flaticon-email:before {
+    content: map-get($flaticon-map, "email");
+}
+.flaticon-visibility:before {
+    content: map-get($flaticon-map, "visibility");
+}
+.flaticon-support:before {
+    content: map-get($flaticon-map, "support");
+}
+.flaticon-search:before {
+    content: map-get($flaticon-map, "search");
+}
+.flaticon-menu:before {
+    content: map-get($flaticon-map, "menu");
+}

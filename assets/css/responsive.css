@@ -1,0 +1,158 @@
+
+  @media screen and (max-width: 1480px) {
+    .container{
+        max-width: 1300px !important;
+    }
+    .card-items .box{
+        width: 100%;
+        display: block;
+    }
+  }
+  @media screen and (max-width: 1300px) {
+    .card-items .card{
+      flex-direction: column;
+      height: auto;
+      text-align: center;
+    }
+    .options select{
+      width: 150px;
+      height: 38px;
+    }
+    
+  }
+  @media screen and (max-width: 1250px) {
+    .date .row-count{
+        margin-left: 20px;
+    }
+    
+  }
+  @media screen and (max-width: 1150px) {
+    .search .search-box{
+      width: 120px;
+    }
+    .search .search-box input{
+        width: 100px;
+    }
+    .data-table-area .search{
+        margin-top: 15px;
+        justify-content: center;
+        float: none;
+        width: 100%;
+    }
+    .data-table-area .query-data {
+      margin: 30px 0 15px 0;
+    }
+    .data-table-area .search{
+      margin-top: 0;
+    }
+    .search .search-box input{
+      padding: 0 10px;
+    }
+    .query-data .chart-btn{
+      margin: 0 auto;
+      text-align: center;
+      padding-top: 20px;
+    }
+  }
+  @media screen and (max-width: 992px) {
+    .card-items .card{
+      width: 175px;
+      height: 72px;
+      flex-direction: row;
+      overflow: hidden;
+      margin-bottom: 15px;
+    }
+    .bar-chart{
+      max-width: 1000px;
+      overflow: scroll;
+    }
+    .data-table-area .date{
+      justify-content: center;
+    }
+    .data-table-area .search{
+      margin-top: 18px;
+    }
+    .options{
+      text-align: center;
+    }
+    .table-field{
+      overflow: scroll;
+    }
+    .data-table-area .content_table{
+      min-width: 1000px;
+    }
+  }
+  @media screen and (max-width: 800px) {
+    .option:nth-child(2){
+      margin: 0px 0px;
+    }
+    .options select{
+      width: 120px;
+      height: 35px;
+      text-align: left;
+    }
+  }
+  
+  @media screen and (max-width: 768px){
+    .left-area {
+      width: calc(100% - 0px);
+    }
+    .right-area{
+      display: none;
+    }
+    
+  }
+  @media screen and (max-width: 430px){
+    .options .option{
+      display: block;
+      text-align: left;
+      margin: 10px 0;
+    }
+    .options .option select{
+      text-align: center;
+      width: 250px;
+    }
+    .data-table-area .date{
+      flex-direction: column;
+      margin-left: -15px;
+    }
+    .date span,
+    .date .input-area{
+      display: block;
+    }
+    .date .input-area{
+      width: 250px;
+    }
+    .date .input-area input{
+      width: 88%;
+    }
+    .date input[type="submit"]{
+      width: 250px;
+      text-align: center;
+      margin-top: 8px;
+    }
+    .date .row-count{
+      display: none;
+    }
+    .data-table-area .search {
+      margin-top: 20px;
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+    }
+    .search .search-box{
+      width: 280px;
+      margin: 0 auto;
+    }
+    .search .search-box input{
+      width: 90%;
+      padding: 0 12px;
+    }
+    .search .search-box i{
+      width: 10%;
+    }
+    .query-data .chart-btn button:last-child{
+      margin-top: 15px;
+    }
+    
+  } 

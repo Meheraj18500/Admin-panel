@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Meta Code -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap Cdn -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css">
+    <!-- Flat-icon Css -->
+    <link rel="stylesheet" href="./assets/font/flaticon.css">
+    <!-- Morris css -->
+    <link rel="stylesheet" href="./assets/css/morris.css">
+    <!-- Custom Css -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <!-- Responsive css -->
+    <link rel="stylesheet" href="./assets/css/responsive.css">
+    <!-- Page title -->
+    <title>Admin page</title>
+</head>
+<body>
+    
+
+    <header>
+        <nav class="navbar navbar-expand-md">
+            <div class="container">
+                <a href="#">Dashboard</a>
+
+                <div class="collapse navbar-collapse">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Login</a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="#">Profile</a>
+                                <a class="dropdown-item" href="#">Log out</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <button class="navbar-toggler" type="button" id="menuBtn" >
+                    <i class="flaticon-menu"></i>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- ------------------ Body Layout Start ---------------- -->
+    <main class="container">
+        <!-- ---------- left Area --------- -->
+        <div class="left-area">
+            
+            <!-- --------------- Data Table Section----------------- -->
+            <div class="area-chart data-table-area">
+                <!-- Data query -->
+                <div class="query-data">
+                    <div class="series-item">
+                        <div class="series1">
+                            <span class="color"></span>
+                            <span class="text">Submitted</span>
+                        </div>
+                        <div class="series2">
+                            <span class="color"></span>
+                            <span class="text">Close</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="bar-chart">
+                    <div id="areaChart"></div>
+                </div>
+            </div>
+            <div class="pagination-box">
+                <nav aria-label="">
+                    <ul class="pagination">
+                      <li class="page-item disabled">
+                        <a class="page-link" href="#0" tabindex="-1">Previous</a>
+                      </li>
+                      <li class="page-item"><a class="page-link" href="index.html">1</a></li>
+                      <li class="page-item">
+                        <a class="page-link" href="admin2.html">2</a>
+                      </li>
+                      <li class="page-item"><a class="page-link" href="charts.htm">3</a></li>
+                      <li class="page-item active"><a class="page-link" href="#0">4</a></li>
+                      <li class="page-item disabled">
+                        <a class="page-link" href="#0">Next</a>
+                      </li>
+                    </ul>
+                  </nav>
+            </div>
+        </div>
+
+        <!-- ---------- Right Area---------- -->
+        <div class="right-area">
+            <div class="create-btn">
+                <button>Create New Ticket</button>
+            </div>
+            <div class="donut-chart">
+                <p>Total Supports</p>
+                <div class="new-div">
+                    <div id="donutChart"></div>
+                </div>
+                <a href="#">Details</a>
+            </div>
+            <div class="column-chart">
+                <p>Problem Category</p>
+                <div class="bar-box">
+                    <div id="commonBar"></div>
+                </div>
+                <a href="#">Details</a>
+            </div>
+            <div class="line-chart">
+                <p>Trend of Close Ticket</p>
+                <div class="line-box">
+                    <div id="commonLineChart"></div>
+                </div>
+                <a href="#">Details</a>
+            </div>
+        </div>
+    </main>
+
+
+
+    <!-- Bootstrap Js -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Mirror js -->
+    <!-- Mirror js -->
+    <script src="./assets/js/jquery-min.js"></script>
+    <script src="./assets/js/raphael-min.js"></script>
+    <script src="./assets/js/morris-min.js"></script>
+    <!-- Custom Js -->
+    <script src="./assets/js/donut.js"></script>
+    <script src="./assets/js/common-bar.js"></script>
+    <script src="./assets/js/common-line.js"></script>
+    <script src="./assets/js/area-chart.js"></script>
+    <!-- main js -->
+    <script src="./assets/js/custom.js"></script>
+
+</body>
+</html>
